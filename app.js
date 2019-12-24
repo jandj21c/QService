@@ -21,7 +21,7 @@ var route_loader = require('./routes/route_loader');
 
 
 //===== 서버 변수 설정 =====//
-//const PORT = config.server_port;
+const PORT = config.server_port;
 
 // 익스프레스 객체 생성
 var app = express();
@@ -41,6 +41,6 @@ app.all('*', function(req, res){
   res.status(404).send('<h1>ERROR - Not Found this URL. by Giparang.</h1>');
 });
 
-app.listen(3000, function() {
+app.listen(PORT, function() {
   console.log('============= 큇서비스 챗봇 서버가 시작되었습니다 ============');
 });
