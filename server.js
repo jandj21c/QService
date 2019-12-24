@@ -7,7 +7,7 @@ var config = require('./config');
 var PORT = config.server_port;
 
 // local test
-PORT = 3000;
+//PORT = 3000;
 
 
 
