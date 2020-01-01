@@ -2,9 +2,11 @@ module.exports = {
 
     server_port : process.env.PORT,
   
-    //database_host : 'us-cdbr-iron-east-03.cleardb.net',
-    //dialect : 'mysql',
-  
+    database_host : 'quickdb.database.windows.net',
+    database_user_name : 'jandj21c',
+    dialect : 'mysql',
+    database_name : 'quickDB',
+    database_key_secret : process.env.passwordsql, // 미적용
     /* develop Data base */
 
     //database_name : 'heroku_b12efbb902f7e6d',
