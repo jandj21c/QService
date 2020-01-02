@@ -6,7 +6,9 @@ module.exports = {
     database_user_name : 'jandj21c',
     dialect : 'mysql',
     database_name : 'quickDB',
-    database_key_secret : process.env.passwordsql, // 미적용
+    database_key_secret : process.env.APPSETTING_SECRET_DB_KEY, // 미적용
+    //database_key_secret : process.env['SECRET_DB_KEY'], // 미적용
+    //database_key_secret : 'quickbot1!', // 미적용
     /* develop Data base */
 
     //database_name : 'heroku_b12efbb902f7e6d',

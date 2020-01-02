@@ -1,6 +1,9 @@
 const Sequelize = require('sequelize');
+const config = require('./config');
 
-const sequelize = new Sequelize('quickDB', 'jandj21c', process.env.passwordsql, {
+console.log('%s secret?', config.database_key_secret);
+
+const sequelize = new Sequelize('quickDB', 'jandj21c', config.database_key_secret, {
   dialect: 'mssql',
   host: 'quickdb.database.windows.net',
   dialectOptions: {
